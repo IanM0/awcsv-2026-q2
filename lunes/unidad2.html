@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Unidad 2</title>
+        <link rel="stylesheet" href="./css/unidad2.css">
     </head>
     <body>
         <header>
@@ -10,17 +11,26 @@
             <h1>Titulo</h1>
             <h2>Subtitulos</h2>
             <h3>Subtitulos</h3>
-            <h4>Subtitulos</h4>
+            <h4 class="grupo1">Subtitulos</h4>
             <h5>Subtitulos</h5>
-            <h6>Subtitulos</h6>
+            <h6 class="grupo2">Subtitulos</h6>
             <p>Parrafo1</p>
-            <p>Parrafo2</p>
+            <p id="parrafo2">Parrafo2</p>
         </header>
 
         <main>
+
+            <div id="contenedor">
+                <div class="cuadrado">1</div>
+                <div class="cuadrado">2</div>
+                <div class="cuadrado">3</div>
+                <div class="cuadrado">4</div>
+            </div>
+
+
             <a href="https://google.com" target="_blank">Google</a>
 
-            <h2>Mis hobbies</h2>
+            <h2 class="grupo1">Mis hobbies</h2>
             <ul>
                 <li>Leer</li>
                 <li>Ver videos</li>
@@ -30,12 +40,12 @@
             <h2>Mi rutina de la mannana</h2>
             <ol>
                 <li>levanto</li>
-                <li>Me <strong>banno</strong></li>
+                <li class="grupo2">Me <strong>banno</strong></li>
                 <li>Doy comida a mis <em>perros</em></li>
-                <li>Hago un batido</li>
+                <li class="grupo1">Hago un batido</li>
             </ol>
 
-            <img src="./images/banner.jpg" width="900">
+            <img src="./images/banner.jpg" id="banner">
 
             <iframe width="560" height="315"
                 src="https://www.youtube.com/embed/BzSz4EKPyB0?si=U_qvYXlR6pjtzEZx"
@@ -47,12 +57,43 @@
                 <form action method="get">
                     <input type="text" placeholder="Escribe el usuario"
                         name="usuario"
-                        id>
+                        id="usuario">
+                    <input type="password" placeholder="Escribe la clave"
+                        name="clave"
+                        id="clave">
+                    <input type="date" placeholder="Escribe la fecha"
+                        name="fecha"
+                        id="fecha">
                     <textarea cols="50" rows="10"></textarea>
                     <input type="submit" value="Enviar">
                     <button type="reset">Limpiar</button>
                 </form>
             </section>
+
+            <section id="section">
+                <p>HIJO1 section</p>
+                <p>HIJO2 section</p>
+                <p>HIJO3 section</p>
+                <div id="hijoSeccion">
+                    <div id="hijo1">
+                        <div id="hijo11">
+                            <h2>Parrafo hijo1.1</h2>
+                            <p>Parrafo hijo1.1</p>
+                            <p>Parrafo hijo1.1</p>
+                            <p>Parrafo hijo1.1</p>
+                        </div>
+                    </div>
+
+                    <div id="hijo2">
+                        <h2>Parrafo hijo2</h2>
+                        <p>Parrafo hijo2</p>
+                        <p>Parrafo hijo2</p>
+                        <p>Parrafo hijo2</p>
+                    </div>
+                </div>
+                <p>HIJO4 section</p>
+            </section>
+
             <footer></footer>
         </main>
 

@@ -1,0 +1,88 @@
+@import url("principal.css");
+
+/* 
+universal
+etiqueta -> h1,img,p, input
+id -> unico en el archivo -> atributo id
+class -> agrupar elementos y les pongo una class
+*/
+
+* {
+    background-color: aquamarine;
+}
+
+h1 {
+    color: red;
+    font-size: 80px;
+
+}
+
+#parrafo2 {
+    color: purple;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.grupo1 {
+    color: green;
+    font-size: 30px;
+}
+
+input[type] {
+    background-color: orange;
+}
+
+input[type="password"] {
+    border-color: red;
+}
+
+[class*="grupo"] {
+    background-color: blueviolet;
+}
+
+#section p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#section>p {
+    color: brown;
+}
+
+#section>p {
+    color: brown;
+}
+
+#hijo11 h2+p {
+    color: red;
+}
+
+#hijo2 h2~p {
+    color: blue;
+}
+
+#banner {
+    width: 200px;
+    height: auto;
+    border: 5px solid violet;
+    padding: 0px;
+    margin: 30px;
+}
+
+.cuadrado {
+    width: 100px;
+   
+    background-color: pink;
+    margin: 10px;
+}
+
+#contenedor {
+    background-color: aqua;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: baseline;
+}
